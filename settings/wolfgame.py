@@ -236,7 +236,14 @@ def get_reveal_role(nick):
         return get_role(nick)
 
 def mourn(role):
-    return not (role in WOLFTEAM_ROLES or role == "monster")
+    is_evil = role in WOLFTEAM_ROLES
+
+    if role == "monster":
+        return False # everyone hates monsters
+    elif DEFAULT_ROLE in WOLFTEAM_ROLES: # assume that 'the village' is evil if the default role is
+        return is_evil
+    else:
+        return not is_evil
 
 def del_player(pname):
     prole = get_role(pname)
