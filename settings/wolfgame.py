@@ -679,6 +679,7 @@ class AleatoireMode(object):
 class CookieMode(object):
     """Game mode created by Metacity. Under development."""
     def __init__(self):
+<<<<<<< HEAD
         self.ROLE_INDEX =         (   4   ,   6   ,   8   ,   9   ,  12   ,  15   ,  17   ,  19  ,  22  )
         self.ROLE_GUIDE = reset_roles(self.ROLE_INDEX)
         self.ROLE_GUIDE.update({# village roles
@@ -702,6 +703,31 @@ class CookieMode(object):
             "assassin"          : (   0   ,   0   ,   0   ,   0   ,   1   ,   2   ,   2   ,   2  ,   2  ),
             "gunner"            : (   0   ,   0   ,   0   ,   1   ,   2   ,   2   ,   2   ,   2  ,   2  ),
             })
+=======
+        self.ROLE_INDEX =         (   4   ,   6   ,   8   ,   9   ,  12   ,  15   ,  17   ,  19   )
+        self.ROLE_GUIDE = reset_roles(self.ROLE_INDEX)
+        self.ROLE_GUIDE.update({# village roles
+            "seer"              : (   1   ,   1   ,   1   ,   1   ,   1   ,   1   ,   1   ,   1   ),
+            "guardian angel"    : (   0   ,   0   ,   0   ,   0   ,   0   ,   1   ,   1   ,   1   ),
+            "shaman"            : (   0   ,   0   ,   1   ,   1   ,   2   ,   2   ,   2   ,   2   ),
+            "village drunk"     : (   0   ,   1   ,   1   ,   1   ,   1   ,   1   ,   1   ,   1   ),
+            "detective"         : (   0   ,   0   ,   0   ,   0   ,   0   ,   1   ,   1   ,   1   ),
+            "hunter"            : (   0   ,   0   ,   0   ,   0   ,   0   ,   1   ,   1   ,   2   ),
+            # wolf roles
+            "wolf"              : (   1   ,   1   ,   1   ,   1   ,   2   ,   2   ,   2   ,   3   ),
+            "traitor"           : (   0   ,   0   ,   0   ,   1   ,   1   ,   1   ,   1   ,   1   ),
+            "minion"            : (   0   ,   0   ,   1   ,   1   ,   1   ,   1   ,   1   ,   1   ),
+            "werecrow"          : (   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   1   ,   1   ),
+            # neutral roles
+            "crazed shaman"     : (   0   ,   0   ,   1   ,   1   ,   1   ,   1   ,   1   ,   1   ),
+            "monster"           : (   0   ,   0   ,   0   ,   0   ,   0   ,   0   ,   1   ,   1   ),
+            # templates
+            "cursed villager"   : (   0   ,   1   ,   1   ,   1   ,   2   ,   2   ,   2   ,   2   ),
+            "assassin"          : (   0   ,   0   ,   0   ,   0   ,   1   ,   2   ,   2   ,   2   ),
+            "gunner"            : (   0   ,   0   ,   0   ,   1   ,   2   ,   2   ,   2   ,   2   ),
+            })
+
+>>>>>>> 5229d9ee5d07ea956a5fba4c5c828f885353fa93
 
 # Persistence
 
